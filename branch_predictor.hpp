@@ -9,6 +9,7 @@
 #include "predictors/gshareN_ahead.hpp"
 #include "predictors/hashed_perceptron.hpp"
 #include "predictors/tutorial/tutorial.hpp"
+#include "predictors/two_level_local.hpp"
 
 #ifdef PREDICTOR
 using branch_predictor = PREDICTOR;
