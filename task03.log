@@ -1,0 +1,297 @@
+Regular Tournament Predictor
+===========================================================
+Running a sweep of Local History Length
+=====================================
+6, 8, 10, 12, 14
+=====================================
++ g++ -std=c++20 -o cbp cbp.cpp -lz -O3 -Wall -Wextra -pedantic -Wold-style-cast -Werror -Wno-deprecated-declarations -Wno-mismatched-tags '-DPREDICTOR=gshare_tournament<6,6,12,12,12,0>'
+trace                   : test
+instructions            : 2004999
+branches                : 396599
+conditional branches    : 334545
+predictions             : 2004999
+extra_cycles            : 334545
+short mispredictions    : 174065
+block-ending short misp : 174065
+mispredictions          : 24327
+p1 latency              : 0 cycles
+p2 latency              : 0.71 cycles
+energy per instruction  : 443 fJ
++ g++ -std=c++20 -o cbp cbp.cpp -lz -O3 -Wall -Wextra -pedantic -Wold-style-cast -Werror -Wno-deprecated-declarations -Wno-mismatched-tags '-DPREDICTOR=gshare_tournament<8,8,12,12,12,0>'
+trace                   : test
+instructions            : 2004999
+branches                : 396599
+conditional branches    : 334545
+predictions             : 2004999
+extra_cycles            : 334545
+short mispredictions    : 174065
+block-ending short misp : 174065
+mispredictions          : 24303
+p1 latency              : 0 cycles
+p2 latency              : 0.753 cycles
+energy per instruction  : 523 fJ
++ g++ -std=c++20 -o cbp cbp.cpp -lz -O3 -Wall -Wextra -pedantic -Wold-style-cast -Werror -Wno-deprecated-declarations -Wno-mismatched-tags '-DPREDICTOR=gshare_tournament<10,10,12,12,12,0>'
+trace                   : test
+instructions            : 2004999
+branches                : 396599
+conditional branches    : 334545
+predictions             : 2004999
+extra_cycles            : 334545
+short mispredictions    : 174065
+block-ending short misp : 174065
+mispredictions          : 24303
+p1 latency              : 0 cycles
+p2 latency              : 0.887 cycles
+energy per instruction  : 721 fJ
++ g++ -std=c++20 -o cbp cbp.cpp -lz -O3 -Wall -Wextra -pedantic -Wold-style-cast -Werror -Wno-deprecated-declarations -Wno-mismatched-tags '-DPREDICTOR=gshare_tournament<12,12,12,12,12,0>'
+trace                   : test
+instructions            : 2004999
+branches                : 396599
+conditional branches    : 334545
+predictions             : 2004999
+extra_cycles            : 334545
+short mispredictions    : 173923
+block-ending short misp : 173923
+mispredictions          : 24440
+p1 latency              : 0 cycles
+p2 latency              : 1.39 cycles
+energy per instruction  : 904 fJ
++ g++ -std=c++20 -o cbp cbp.cpp -lz -O3 -Wall -Wextra -pedantic -Wold-style-cast -Werror -Wno-deprecated-declarations -Wno-mismatched-tags '-DPREDICTOR=gshare_tournament<14,14,12,12,12,0>'
+trace                   : test
+instructions            : 2004999
+branches                : 396599
+conditional branches    : 334545
+predictions             : 2004999
+extra_cycles            : 334545
+short mispredictions    : 173923
+block-ending short misp : 173923
+mispredictions          : 24440
+p1 latency              : 0 cycles
+p2 latency              : 2.13 cycles
+energy per instruction  : 1331 fJ
+Running a sweep of GHR Length
+=====================================
+6, 8, 10, 12, 14
+=====================================
++ g++ -std=c++20 -o cbp cbp.cpp -lz -O3 -Wall -Wextra -pedantic -Wold-style-cast -Werror -Wno-deprecated-declarations -Wno-mismatched-tags '-DPREDICTOR=gshare_tournament<10,10,6,6,6,0>'
+trace                   : test
+instructions            : 2004999
+branches                : 396599
+conditional branches    : 334545
+predictions             : 2004999
+extra_cycles            : 334545
+short mispredictions    : 161678
+block-ending short misp : 161678
+mispredictions          : 42624
+p1 latency              : 0 cycles
+p2 latency              : 0.887 cycles
+energy per instruction  : 360 fJ
++ g++ -std=c++20 -o cbp cbp.cpp -lz -O3 -Wall -Wextra -pedantic -Wold-style-cast -Werror -Wno-deprecated-declarations -Wno-mismatched-tags '-DPREDICTOR=gshare_tournament<10,10,8,8,8,0>'
+trace                   : test
+instructions            : 2004999
+branches                : 396599
+conditional branches    : 334545
+predictions             : 2004999
+extra_cycles            : 334545
+short mispredictions    : 168684
+block-ending short misp : 168684
+mispredictions          : 33287
+p1 latency              : 0 cycles
+p2 latency              : 0.887 cycles
+energy per instruction  : 397 fJ
++ g++ -std=c++20 -o cbp cbp.cpp -lz -O3 -Wall -Wextra -pedantic -Wold-style-cast -Werror -Wno-deprecated-declarations -Wno-mismatched-tags '-DPREDICTOR=gshare_tournament<10,10,10,10,10,0>'
+trace                   : test
+instructions            : 2004999
+branches                : 396599
+conditional branches    : 334545
+predictions             : 2004999
+extra_cycles            : 334545
+short mispredictions    : 172948
+block-ending short misp : 172948
+mispredictions          : 26625
+p1 latency              : 0 cycles
+p2 latency              : 0.893 cycles
+energy per instruction  : 509 fJ
++ g++ -std=c++20 -o cbp cbp.cpp -lz -O3 -Wall -Wextra -pedantic -Wold-style-cast -Werror -Wno-deprecated-declarations -Wno-mismatched-tags '-DPREDICTOR=gshare_tournament<10,10,12,12,12,0>'
+trace                   : test
+instructions            : 2004999
+branches                : 396599
+conditional branches    : 334545
+predictions             : 2004999
+extra_cycles            : 334545
+short mispredictions    : 174065
+block-ending short misp : 174065
+mispredictions          : 24303
+p1 latency              : 0 cycles
+p2 latency              : 0.887 cycles
+energy per instruction  : 721 fJ
++ g++ -std=c++20 -o cbp cbp.cpp -lz -O3 -Wall -Wextra -pedantic -Wold-style-cast -Werror -Wno-deprecated-declarations -Wno-mismatched-tags '-DPREDICTOR=gshare_tournament<10,10,14,14,14,0>'
+trace                   : test
+instructions            : 2004999
+branches                : 396599
+conditional branches    : 334545
+predictions             : 2004999
+extra_cycles            : 334545
+short mispredictions    : 172803
+block-ending short misp : 172803
+mispredictions          : 24147
+p1 latency              : 0 cycles
+p2 latency              : 0.997 cycles
+energy per instruction  : 1112 fJ
+Regular Tournament with G-Share
+===========================================================
+Running a sweep of Local History Length
+=====================================
+6, 8, 10, 12, 14
+=====================================
++ g++ -std=c++20 -o cbp cbp.cpp -lz -O3 -Wall -Wextra -pedantic -Wold-style-cast -Werror -Wno-deprecated-declarations -Wno-mismatched-tags '-DPREDICTOR=gshare_tournament<6,6,12,12,12,1>'
+trace                   : test
+instructions            : 2004999
+branches                : 396599
+conditional branches    : 334545
+predictions             : 2004999
+extra_cycles            : 334545
+short mispredictions    : 174102
+block-ending short misp : 174102
+mispredictions          : 24980
+p1 latency              : 0 cycles
+p2 latency              : 0.743 cycles
+energy per instruction  : 443 fJ
++ g++ -std=c++20 -o cbp cbp.cpp -lz -O3 -Wall -Wextra -pedantic -Wold-style-cast -Werror -Wno-deprecated-declarations -Wno-mismatched-tags '-DPREDICTOR=gshare_tournament<8,8,12,12,12,1>'
+trace                   : test
+instructions            : 2004999
+branches                : 396599
+conditional branches    : 334545
+predictions             : 2004999
+extra_cycles            : 334545
+short mispredictions    : 174102
+block-ending short misp : 174102
+mispredictions          : 24980
+p1 latency              : 0 cycles
+p2 latency              : 0.787 cycles
+energy per instruction  : 528 fJ
++ g++ -std=c++20 -o cbp cbp.cpp -lz -O3 -Wall -Wextra -pedantic -Wold-style-cast -Werror -Wno-deprecated-declarations -Wno-mismatched-tags '-DPREDICTOR=gshare_tournament<10,10,12,12,12,1>'
+trace                   : test
+instructions            : 2004999
+branches                : 396599
+conditional branches    : 334545
+predictions             : 2004999
+extra_cycles            : 334545
+short mispredictions    : 174102
+block-ending short misp : 174102
+mispredictions          : 24980
+p1 latency              : 0 cycles
+p2 latency              : 0.887 cycles
+energy per instruction  : 722 fJ
++ g++ -std=c++20 -o cbp cbp.cpp -lz -O3 -Wall -Wextra -pedantic -Wold-style-cast -Werror -Wno-deprecated-declarations -Wno-mismatched-tags '-DPREDICTOR=gshare_tournament<12,12,12,12,12,1>'
+trace                   : test
+instructions            : 2004999
+branches                : 396599
+conditional branches    : 334545
+predictions             : 2004999
+extra_cycles            : 334545
+short mispredictions    : 174102
+block-ending short misp : 174102
+mispredictions          : 24980
+p1 latency              : 0 cycles
+p2 latency              : 1.39 cycles
+energy per instruction  : 915 fJ
++ g++ -std=c++20 -o cbp cbp.cpp -lz -O3 -Wall -Wextra -pedantic -Wold-style-cast -Werror -Wno-deprecated-declarations -Wno-mismatched-tags '-DPREDICTOR=gshare_tournament<14,14,12,12,12,1>'
+trace                   : test
+instructions            : 2004999
+branches                : 396599
+conditional branches    : 334545
+predictions             : 2004999
+extra_cycles            : 334545
+short mispredictions    : 174102
+block-ending short misp : 174102
+mispredictions          : 24980
+p1 latency              : 0 cycles
+p2 latency              : 2.13 cycles
+energy per instruction  : 1527 fJ
+Running a sweep of GHR Length
+=====================================
+6, 8, 10, 12, 14
+=====================================
++ g++ -std=c++20 -o cbp cbp.cpp -lz -O3 -Wall -Wextra -pedantic -Wold-style-cast -Werror -Wno-deprecated-declarations -Wno-mismatched-tags '-DPREDICTOR=gshare_tournament<10,10,6,6,6,1>'
+trace                   : test
+instructions            : 2004999
+branches                : 396599
+conditional branches    : 334545
+predictions             : 2004999
+extra_cycles            : 334545
+short mispredictions    : 159179
+block-ending short misp : 159179
+mispredictions          : 46705
+p1 latency              : 0 cycles
+p2 latency              : 0.887 cycles
+energy per instruction  : 379 fJ
++ g++ -std=c++20 -o cbp cbp.cpp -lz -O3 -Wall -Wextra -pedantic -Wold-style-cast -Werror -Wno-deprecated-declarations -Wno-mismatched-tags '-DPREDICTOR=gshare_tournament<10,10,8,8,8,1>'
+trace                   : test
+instructions            : 2004999
+branches                : 396599
+conditional branches    : 334545
+predictions             : 2004999
+extra_cycles            : 334545
+short mispredictions    : 168742
+block-ending short misp : 168742
+mispredictions          : 33489
+p1 latency              : 0 cycles
+p2 latency              : 0.887 cycles
+energy per instruction  : 419 fJ
++ g++ -std=c++20 -o cbp cbp.cpp -lz -O3 -Wall -Wextra -pedantic -Wold-style-cast -Werror -Wno-deprecated-declarations -Wno-mismatched-tags '-DPREDICTOR=gshare_tournament<10,10,10,10,10,1>'
+trace                   : test
+instructions            : 2004999
+branches                : 396599
+conditional branches    : 334545
+predictions             : 2004999
+extra_cycles            : 334545
+short mispredictions    : 172972
+block-ending short misp : 172972
+mispredictions          : 27414
+p1 latency              : 0 cycles
+p2 latency              : 0.893 cycles
+energy per instruction  : 545 fJ
++ g++ -std=c++20 -o cbp cbp.cpp -lz -O3 -Wall -Wextra -pedantic -Wold-style-cast -Werror -Wno-deprecated-declarations -Wno-mismatched-tags '-DPREDICTOR=gshare_tournament<10,10,12,12,12,1>'
+trace                   : test
+instructions            : 2004999
+branches                : 396599
+conditional branches    : 334545
+predictions             : 2004999
+extra_cycles            : 334545
+short mispredictions    : 174102
+block-ending short misp : 174102
+mispredictions          : 24980
+p1 latency              : 0 cycles
+p2 latency              : 0.887 cycles
+energy per instruction  : 722 fJ
++ g++ -std=c++20 -o cbp cbp.cpp -lz -O3 -Wall -Wextra -pedantic -Wold-style-cast -Werror -Wno-deprecated-declarations -Wno-mismatched-tags '-DPREDICTOR=gshare_tournament<10,10,14,14,14,1>'
+trace                   : test
+instructions            : 2004999
+branches                : 396599
+conditional branches    : 334545
+predictions             : 2004999
+extra_cycles            : 334545
+short mispredictions    : 173232
+block-ending short misp : 173232
+mispredictions          : 23867
+p1 latency              : 0 cycles
+p2 latency              : 1.03 cycles
+energy per instruction  : 1104 fJ
+
+=========================================================== Optimal ============================================================
+./compile cbp -DPREDICTOR="gshare_tournament<10,10,14,14,14,1>"  && ./cbp ./gcc_test_trace.gz test 1000000 40000000
+ --format human
++ g++ -std=c++20 -o cbp cbp.cpp -lz -O3 -Wall -Wextra -pedantic -Wold-style-cast -Werror -Wno-deprecated-declarations -Wno-mismatched-tags '-DPREDICTOR=gshare_tournament<10,10,14,14,14,1>'
+trace                   : test
+instructions            : 2004999
+branches                : 396599
+conditional branches    : 334545
+predictions             : 2004999
+extra_cycles            : 334545
+short mispredictions    : 173232
+block-ending short misp : 173232
+mispredictions          : 23867
+p1 latency              : 0 cycles
+p2 latency              : 1.03 cycles
+energy per instruction  : 1104 fJ
