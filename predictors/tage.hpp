@@ -105,7 +105,7 @@ struct tage : predictor {
     void new_block(val<64> inst_pc)
     {
         val<LOGLINEINST> offset = inst_pc.fo1() >> 2;
-        block_entry = offset.fo1().decode().concat();
+        block_entry = offset.fo1().decode().concat(); 
         block_entry.fanout(hard<6*LINEINST>{});
         block_size = 1;
     }
@@ -175,7 +175,7 @@ struct tage : predictor {
         notumask.fanout(hard<2>{});
 
         // gather prediction bits for each offset
-        val<NUMG> gpreds = readc.concat();
+        val<NUMG> gpreds = readc.concat(); 
         gpreds.fanout(hard<LINEINST>{});
         arr<val<NUMG+1>,LINEINST> preds = [&](u64 offset){return concat(readb[offset],gpreds);};
         preds.fanout(hard<2*LINEINST>{});

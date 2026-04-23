@@ -10,7 +10,6 @@
 #include "predictors/hashed_perceptron.hpp"
 #include "predictors/tutorial/tutorial.hpp"
 #include "predictors/two_level_local.hpp"
-#include "predictors/tournament_predictor.hpp"
 #include "predictors/gshare_tournament.hpp"
 #include "predictors/global_predictor.hpp"
 #ifdef PREDICTOR
